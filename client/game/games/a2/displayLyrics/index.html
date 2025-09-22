@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Melingo</title>
+        <link href="styles.css" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script> -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <!-- Tab -->
+            <div class="fa_bar">
+                <input type="checkbox" id="check">
+
+                <!-- SideBar OneChamp : xứng đáng có quay 3 dao almaphite -->
+                <div class="fa_bar_container">
+                    <header>Menu</header>
+                    <ul>
+                        <li>
+                            <a href="/client/mainhome/index.html">Home</a>
+                        </li>  
+
+                        <li>
+                            <a href="/client/playlists/index.html">Playlist</a>
+                        </li>  
+                        
+                        <li>
+                            <a href="/client/game/index.html">Games</a>
+                        </li>
+
+                        <li>
+                            <a href="/client/vocabulary/index.html">Vocabulary List</a>
+                        </li>
+
+                        <li>
+                            <a href="/client/timeset/index.html">Time Set</a>
+                        </li>
+
+                        <li>
+                            <a href="/client/services/index.html">Services</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <label for ="check">
+                    <div id="btn">
+                        <img src="/assets/fabar.png" id="btn_image" alt="menu">
+                    </div>
+                </label>
+
+            </div>
+
+            <div class="title">
+                <header>Melingo</header>
+            </div>
+            <div class="account">
+                <img src="/assets/dog.png" alt="profile_pỉcture">
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <span class="left_nav_wrapper">
+                <h1>LYRICS SEARCH</h1>
+                <span class="separator"></span>
+            </span>
+
+            <span class="right_nav_wrapper">
+                <div class="form">
+                    <input id="artist" type="search" name="artist" placeholder="Search artist" class="search_box_wrapper">
+                    <input id="song" type="search" name="song" placeholder="Search song name" class="search_box_wrapper">
+
+                    <button type="submit" id="search_btn_wrapper">Search</button>
+                </div>
+            </span>
+        </div>
+        <div class="body">
+            <div class="left_body">
+                <div class="lyrics_box">
+                    <h2 id="name-display"></h2>
+                    <h4 id="artist-display"></h4>
+                    
+                    <div class="thumbnail"></div>
+                    <button>PLAYING...</button>
+                </div>
+                <div class="lyrics_box">
+                    <button id="checkans">CHECK ANSWERS</button>
+                </div>
+            </div>
+            <div class="displayLyrics" id="lyrics"></div>
+            <div class="right_body">
+                <div class="lyrics_box">
+                    <h2>Result:</h2>
+                    <h4 id="score">0/20</h4>
+                </div>
+                <div class="lyrics_box">
+                    <h2 id="compliment">GOOD JOB!</h2>
+                </div>
+                <img src="/assets/laydog.png" alt="dog">
+            </div>
+        </div>
+
+        <script type="module" src="./script.js"></script>
+</div>
+</html>

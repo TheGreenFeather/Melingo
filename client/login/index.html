@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="/client/login/styles.css" rel="stylesheet">
+    <!-- <script defer src="/socket.io/socket.io.js"></script> -->
+    <script type="module" defer src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="/assets/background.png" alt="background" class="background">
+        <div class="form">
+            <header>Welcome back!<p>Login to continue your adventure.</p></header>
+
+            <div class="Username">
+                <input type="text" name="Username" id="username_imput" class="text" placeholder="Username" required>
+                <label for="username_imput" class="text_lable">Username</label>
+            </div>
+
+            <div class="Password">
+                <input type="password" name="Password" id="password_input" class="text" placeholder="Password" minlength="8" required>
+                <label for="password_imput" class="text_lable">Password</label>
+                <input type="checkbox" name="Toggle" id="toggle_pass" onclick="togglePass()">
+                <label for="toggle_pass" id="toggle_lable">Show</label>
+            </div>
+
+            <div class="Login">
+                <input id="login" type="button" value="LOGIN" class="button">
+            </div>
+
+            <div class="Forgot">
+                <a href="/client/register/index.html" class="haiyaforgot">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function togglePass() {
+    const text = document.getElementById("password_input");
+    const lable = document.getElementById("toggle_lable");
+    if (text.type === "password") {
+        text.type = "text";
+        lable.innerHTML = "Hide";
+    } else {
+        text.type = "password";
+        lable.innerHTML = "Show";
+    }
+  }
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Melingo</title>
+        <link href="styles.css" rel="stylesheet">
+        <script type="module" defer src="index.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <!-- Tab -->
+            <div class="fa_bar">
+                <input type="checkbox" id="check">
+
+                <!-- SideBar OneChamp : xứng đáng có quay 3 dao almaphite -->
+                <div class="fa_bar_container">
+                    <header>Menu</header>
+                    <ul>
+                        <li>
+                            <a href="/client/mainhome/index.html">Home</a>
+                        </li>  
+
+                        <li>
+                            <a href="/client/playlists/index.html">Playlist</a>
+                        </li>  
+                        
+                        <li>
+                            <a href="/client/game/index.html">Games</a>
+                        </li>
+
+                        <li>
+                            <a href="/client/vocabulary/index.html">Vocabulary List</a>
+                        </li>
+
+                        <li>
+                            <a href="/client/timeset/index.html">Time Set</a>
+                        </li>
+
+                        <li>
+                            <a href="/client/services/index.html">Services</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <label for ="check">
+                    <div id="btn">
+                        <img src="/assets/fabar.png" id="btn_image" alt="menu">
+                    </div>
+                </label>
+
+            </div>
+
+            <div class="title">
+                <header>Melingo</header>
+            </div>
+            <div class="account">
+                <img src="/assets/dog.png" alt="profile_pỉcture">
+            </div>
+        </div>
+
+
+        <div class="wrapper">
+            <div class="contain">
+                <img src="/assets/dog.png" alt="clock">
+                <h1>00:00:00</h1>
+                <div class="content">
+                    <div class="column">
+                        <select>
+                            <option value="Hour" selected hidden>Hour</option>
+                        </select>
+                    </div>
+
+                    <div class="column">    
+                        <select>
+                            <option value="Minute" selected hidden>Minute</option>
+                        </select>
+                    </div>
+
+                    
+                    <div class="column">
+                        <select>
+                            <option value="AM/PM" selected hidden>AM/PM</option>
+                        </select>
+                    </div>
+
+                    
+                </div>
+                <button id="setalarm">Set Alarm</button>
+                <!-- <button id="clear">Clear</button> -->
+            </div>
+        </div>
+
+            
+    </body>
+</html>

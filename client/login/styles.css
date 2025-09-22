@@ -1,0 +1,160 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../../assets/Raleway\ Font/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../../assets/Raleway\ Font/Raleway-SemiBold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Baloo Bhaijaan 2';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/baloobhaijaan2/v19/zYXwKUwuEqdVGqM8tPDdAA_Y-_bMKo1EhQd2tWxo8TwRTZP_JYs.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Raleway;
+} */
+
+* {
+    margin: 0;
+    font-family: 'Baloo Bhaijaan 2';
+}
+.container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 36vmax;
+    height: 36.75vmax;
+    border-radius: 3.5vmax;
+}
+.form header {
+    margin-top: 4vmax;
+    font-size: 2.5vmax;
+    text-align: center;
+    color: #1A4E88;
+    font-weight: bold;
+    margin-bottom: 3.25vmax;
+    padding-top: 0.2vmax;
+}
+.form header p {
+    font-size: 1.55vmax;
+    font-weight: normal;
+    padding-top: 0.2vmax;
+}
+.Username, .Password {
+    position: relative;
+    margin-top: 1vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form .text {
+    top: 0;
+    width: 28vmax;
+    border: 0;
+    outline: 0;
+    color: #1A4E88;
+    background-color: #F9DA82;
+    border-radius: 2vmax;
+    font-size: 1.5vmax;
+    padding: 0.65vmax 1.15vmax;
+    transition: border-color 0.2s;
+    font-weight: bold;
+    padding-top: 0.85vmax;
+    &::placeholder {
+        color: transparent;
+    }
+
+    &:placeholder-shown ~ .text_lable {
+        font-size: 1.5vmax;
+        top: 0.65vmax;
+    }
+
+    &:placeholder-shown ~ #toggle_lable {
+        display: none;
+    }
+}
+::-ms-reveal {
+    display: none;
+}
+.text_lable {
+    padding-top: 0.2vmax;
+    color: #1A4E88;
+    font-weight: bold;
+    position: absolute;
+    transition: 0.2s;
+    font-size: 1.15vmax;
+    margin-bottom: 2vmax;
+    top: -1.5vmax;
+    border-radius: 1vmax;
+    left: 4vmax;
+    pointer-events: none;
+}
+.form .text:focus {
+    ~ .text_lable {
+        font-size: 1.15vmax;
+        top: -1.75vmax;
+    }
+}
+
+#toggle_pass {
+    display: none;
+}
+
+#toggle_lable {
+    position: absolute;
+    font-size: 1.15vmax;
+    color: #1A4E88;
+    right: 4vmax;
+    display: block;
+}
+
+.haiyaforgot {
+    padding-top: 0.2vmax;
+    color: #1A4E88;
+    font-size: 1.15vmax;
+    margin-left: 0.75vmax;
+}
+.Forgot {
+    position: relative;
+    margin-top: 1vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Login {
+    position: relative;
+    margin-top: 3vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button {
+    width: 30.3vmax;
+    border-radius: 2vmax;
+    font-size: 2vmax;
+    padding: 0.4vmax 0;
+    padding-top: 0.6vmax;
+    color: #1A4E88;
+    border: 0;
+    background-color: #F9C780;
+    font-weight: bold;
+}

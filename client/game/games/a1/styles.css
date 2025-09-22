@@ -1,0 +1,231 @@
+@font-face {
+    font-family: Raleway;
+    src: url(/assets/Raleway\ Font/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(/assets/Raleway\ Font/Raleway-SemiBold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Baloo Bhaijaan 2';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/baloobhaijaan2/v19/zYXwKUwuEqdVGqM8tPDdAA_Y-_bMKo1EhQd2tWxo8TwRTZP_JYs.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Baloo Bhaijaan 2';
+    overflow: hidden;
+    scrollbar-width: thin;
+    border: 0;
+}
+
+body{
+    background: #F9DA82;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    z-index: 1;
+    position: fixed;
+    background: #009ac9;
+    width: 100%;
+    display: block;
+    height: 3.5vmax;
+}
+
+.fa_bar_container{
+    position: fixed;
+    left: -18vmax;
+    width: 17.5vmax;
+    height: 100%;
+    background: #F9C780;
+    transition: all 0.5s ease;
+    border-right: white solid 0.5vmax;
+}
+
+.fa_bar_container header{
+    font-size: 1.75vmax;
+    color:white;
+    padding-left: 5vmax;
+    background: #009ac9;
+    line-height: 3.3vmax;
+    user-select: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    padding-top: 0.2vmax;
+}
+
+.title{
+    float: left;
+    color:white;
+    line-height: 3.5vmax;
+    user-select: none;
+    font-weight: bold;
+    font-size: 1.75vmax;
+    margin-left: 5vmax;
+    padding-top: 0.2vmax;
+}
+
+.fa_bar_container ul a{
+    display: block;
+    height: 0%;
+    width: 100%;
+    line-height: 3.5vmax;
+    font-size: 1.65vmax;
+    color: #1A4E88;
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+    padding-left: 1vmax;
+    font-weight: bold;
+    padding-top: 0.2vmax;
+}
+
+ul li:hover a {
+    padding-left: 3vmax;
+    background: #f0ba6e;
+}
+
+label:hover #btn{
+    background: rgb(0, 130, 170);
+}
+
+#check{
+    display:none;
+}
+
+label #btn{
+    position: absolute;
+    cursor: pointer;
+    left:0;
+    top:0;
+    width: 3.5vmax;
+    height: 3.5vmax;
+    color:white;
+    transition: all 0.2s;
+    background: #009ac9;
+}
+
+label #btn_image{
+    padding-left: 0.25vmax;
+    padding-top: 0.25vmax;
+    width: 3vmax;
+}
+
+.account {
+    float: right;
+    width: 3.5vmax;
+    height: 3.5vmax;
+    margin-right: 1vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.account img {
+    background-color: black;
+    width: 2.5vmax;
+    height: 2.5vmax;
+    border-radius: 2.5vmax;
+    border: 0.15vmax solid white;
+}
+
+#check:checked ~.fa_bar_container{
+    left:0;
+}
+
+#check:checked ~ label #btn{
+    background: rgb(0, 130, 170);
+}
+
+/*e4----------------Quizzizz------------------ */
+.container2{
+    padding: 3vmax 0;
+    margin: 10vmax auto 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width:100%
+}
+
+.container2 h1{
+    font-size: 3vmax;
+    font-weight: bolder;
+    color:#1A4E88;
+}
+
+#answer-button{
+    width:90%;
+    margin-top: 8vmax;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: 6vmax;
+}
+
+.btn{
+    outline: 0;
+    background-color: #B6D5F0;
+    width: 40vmax;
+    height: 8vmax;
+    border-radius: 8px;
+    margin: 1vmax 1vmax;
+    color: #1A4E88;
+    font-size: 2.5vmax;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover:not([disabled]){
+    background-color: #f0ba6e;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+.correct{
+    background-color: rgb(75, 235, 75);
+}
+
+.incorrect{
+    background-color: red;
+}
+
+
+/* --------------Footer--------------------- */
+.footer{
+    position: fixed;
+    width:100%;
+    background-color: rgba(5,5,5,0.25);
+    height: 60px;
+    bottom: 0;
+}
+
+.footer #next_btn{
+    float: right;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    background-color: rgba(5,5,5,0.25);
+    width: 100px;
+    height: 60px;
+    padding: 5px 3px;
+    font-weight: bold;
+}
+
+#next_btn:disabled{
+    color: gray;
+    font-weight: normal;
+}

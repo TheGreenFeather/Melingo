@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melingo</title>
+    <link href="/client/mainhome/styles.css" rel="stylesheet">
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="/client/dist/face-api.min.js"></script>
+    <script defer src="/client/mainhome/module.js"></script>
+    <script defer src="/client/mainhome/time.js"></script>
+    <script defer src="/client/mainhome/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Các tính năng tương lai -->
+        <div class="header">
+            <!-- Tab -->
+            <div class="fa_bar">
+                <input type="checkbox" id="check">
+
+                <!-- SideBar OneChamp : xứng đáng có quay 3 dao almaphite -->
+                <div class="fa_bar_container">
+                    <header>Menu</header>
+                    <ul>
+                        <li>
+                            <a href="/client/mainhome/index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="/client/playlists/index.html">Playlists</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/client/game/index.html">Games</a>
+                        </li>
+
+                        <li>
+                            <a href="/client/vocabulary/index.html">Vocabulary List</a>
+                        </li>
+
+                        <li>
+                            <a href="/client/timeset/index.html">Time Set</a>
+                        </li>
+
+                        <li>
+                            <a href="/client/services/index.html">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <label for ="check">
+                    <div id="btn">
+                        <img src="/assets/fabar.png" id="btn_image" alt="menu">
+                    </div>
+                </label>
+
+            </div>
+
+            <div class="title">
+                <header>Melingo</header>
+            </div>
+
+            <div class="account">
+                <img src="/assets/dog.png" alt="profile_pỉcture">
+            </div>
+
+            <div class="camera">
+                <input type="checkbox" id="cameracheck">
+
+                <label for="cameracheck">
+                    <div id="camera_btn">
+                        <img src="/assets/camera.png" id="camera_image" alt="menu">
+                    </div>
+                </label>
+
+                <div class="camera_video">
+                    <video id="webcam" autoplay muted></video>
+                </div>
+            </div>
+
+            <div class="feeling">
+                <header>Mood: </header>
+                <header id="mood"></header>
+            </div>
+
+        </div>
+
+        <!-- Chạy video trên danh sách -->
+        <div class="row">
+            <div class="video">
+                <!-- Tải video từ youtube -->
+                <!-- <video controls>
+                    <source src="/assets/test.mp4" type="video/mp4">
+                </video> -->
+                <span id="display_video">
+                    <iframe src="https://www.youtube.com/embed/JGwWNGJdvx8" title="Shape of you" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </span>
+                <div class="cap">
+                    <h2>Shape of you</h2>
+                    <h3>Ed Sheeran</h3>
+
+                </div>
+            </div>
+
+            <!-- Playlist -->
+            <div class="playlist">
+
+                <div class="box">
+                    <h3 class="box_header">Recommendations</h3>
+
+                    <!-- For Prototype Only -->
+
+                    <!-- Nhớ fix -->
+                    <span id="recommendations">
+                    </span>
+
+                </div>
+
+
+                <span id="all_videos"></span>
+            </div>
+
+        </div>
+
+        <div class="pop_up_screen" id="warning-pop-up" style="color: black;">
+            <img src="/assets/saddog.png" alt="saddog" class="pop_up_dog">
+            <div class="pop_up">
+                <!-- <button type="button" class="btn-close" onclick="closeWarning()">
+                    <img src="/assets/cross.png" alt="close">
+                </button> -->
+                <div class="content">
+                    <p id="warning-pop-up-title">WARNING</p>
+                    <p id="warning-pop-up-description">LET’S EXERCISE!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pop_up_screen" id="suggest-pop-up" style="color: black;">
+            <img src="/assets/handupdoigie.png" alt="saddog" class="pop_up_dog">
+            <div class="pop_up">
+                <!-- <button type="button" class="btn-close" onclick="closeWarning()">
+                    <img src="/assets/cross.png" alt="close">
+                </button> -->
+                <div class="content">
+                    <p id="suggest-pop-up-title">IS THE MUSIC SUITABLE?</p>
+                    <div class="suggest-btn">
+                        <button id="btn1">Yes, it is</button>
+                        <button id="btn2">No, change</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+        <!-- Footer để trang trí thôi -->
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+</html>

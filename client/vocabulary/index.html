@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melingo</title>
+    <link href="/client/vocabulary/styles.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Các tính năng tương lai -->
+        <div class="header">
+            <!-- Tab -->
+            <div class="fa_bar">
+                <input type="checkbox" id="check">
+
+                <!-- SideBar OneChamp : xứng đáng có quay 3 dao almaphite -->
+                <div class="fa_bar_container">
+                    <header>Menu</header>
+                    <ul>
+                        <li>
+                            <a href="/client/mainhome/index.html">Home</a>
+                        </li>  
+
+                        <li>
+                            <a href="/client/playlists/index.html">Playlist</a>
+                        </li> 
+                        
+                        <li>
+                            <a href="/client/game/index.html">Games</a>
+                        </li>
+
+                        <li>
+                            <a href="/client/vocabulary/index.html">Vocabulary List</a>
+                        </li>
+
+                        <li>
+                            <a href="/client/timeset/index.html">Time Set</a>
+                        </li>
+
+                        <li>
+                            <a href="/client/services/index.html">Services</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <label for ="check">
+                    <div id="btn">
+                        <img src="/assets/fabar.png" id="btn_image" alt="menu">
+                    </div>
+                </label>
+
+            </div>
+
+            <div class="title">
+                <header>Melingo</header>
+            </div>
+            <div class="account">
+                <img src="/assets/dog.png" alt="profile_pỉcture">
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <span class="left_nav_wrapper">
+                <h1>VOCABULARY</h1>
+                <span class="separator"></span>
+            </span>
+
+            <span class="right_nav_wrapper">
+                <h3 id="set">Last Set Learned:  </h3>
+
+                <h3 id="date">Date: </h3>
+            </span>
+        </div>
+        
+
+        <div class="unit_container">
+            <div id="container" class="unit_card">
+
+                
+                <div class="unit_add">
+                    <button id="add"><img  src="/assets/add.png"></button>
+                </div>
+
+                <!-- <div class="unit">
+                    <h2>Unit1</h2>
+                    <h3>Future in the house</h3>
+                    <button>STUDY SET</button>
+                </div> -->
+            </div>
+
+            <div class="credit">
+                <h1>YOU CAN DO IT</h1>
+                <a><img src="/assets/handupdoigie.png"></a>
+                
+            </div>
+        </div>
+
+        <div class="pop-up-container" id="pop-up">
+            <div class="pop-up">
+                <h1>Add Flashcard</h1>
+                <h2>Improving your vocabulary</h2>
+
+                <div class="card-title">
+                    <input type="text" name="Title" id="card_title" class="text" placeholder="Title" required>
+                    <label for="card_title" class="text_lable">Title <span>*</span></label>
+                </div>
+                <!-- <div class="card-description">
+                    <input type="text" name="Description" id="card_description" class="text" placeholder="Description" required>
+                    <label for="card_description" class="text_lable">Description <span>*</span></label>
+                </div> -->
+                <div class="add-cards">
+                    <header><h2>Add Cards</h2></header>
+                    <div class="add-cards-body" id="card_container">
+
+                        <!-- <div class="single-card">
+                            <div class="word">
+                                <input type="text" name="Vocab" id="word" class="text" placeholder="Word" required>
+                                <label for="word" class="text_lable">Word <span>*</span></label>
+                            </div>
+                            <div class="meaning">
+                                <input type="text" name="Meaning" id="meaning" class="text" placeholder="Meaning" required>
+                                <label for="meaning" class="text_lable">Meaning <span>*</span></label>
+                            </div>
+                            <div class="single-card-footer">
+                                <button>⊖ Remove card</button>
+                            </div>
+                        </div>
+
+                        <div class="single-card">
+                            <div class="word">
+                                <input type="text" name="Vocab" id="word1" class="text" placeholder="Word" required>
+                                <label for="word1" class="text_lable">Word <span>*</span></label>
+                            </div>
+                            <div class="meaning">
+                                <input type="text" name="Meaning" id="meaning1" class="text" placeholder="Meaning" required>
+                                <label for="meaning1" class="text_lable">Meaning <span>*</span></label>
+                            </div>
+                            <div class="single-card-footer">
+                                <button>⊖ Remove card</button>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="add-cards-footer">
+                        <button>⨁ Add card</button>
+                    </div>
+                </div>
+                <div class="card-ask">
+                    <button id="add-pop-up">Add</button>
+                    <button id="cancel-pop-up">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <script type="module" defer src="./index.js"></script>
+</body>
+</html>

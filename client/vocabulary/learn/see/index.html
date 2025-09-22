@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Melingo</title>
+        <link href="styles.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- Các tính năng tương lai -->
+            <div class="header">
+                <!-- Tab -->
+                <div class="fa_bar">
+                    <input type="checkbox" id="check">
+    
+                    <!-- SideBar OneChamp : xứng đáng có quay 3 dao almaphite -->
+                    <div class="fa_bar_container">
+                        <header>Menu</header>
+                        <ul>
+                            <li>
+                                <a href="/client/mainhome/index.html">Home</a>
+                            </li>  
+                            
+                            <li>
+                                <a href="/client/playlists/index.html">Playlist</a>
+                            </li> 
+
+                            <li>
+                                <a href="/client/game/index.html">Games</a>
+                            </li>
+    
+                            <li>
+                                <a href="/client/vocabulary/index.html">Vocabulary List</a>
+                            </li>
+    
+                            <li>
+                                <a href="/client/timeset/index.html">Time Set</a>
+                            </li>
+    
+                            <li>
+                                <a href="/client/services/index.html">Services</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <label for ="check">
+                        <div id="btn">
+                            <img src="/assets/fabar.png" id="btn_image" alt="menu">
+                        </div>
+                    </label>
+    
+                </div>
+    
+                <div class="title">
+                    <header>Melingo</header>
+                </div>
+                <div class="account">
+                    <img src="/assets/dog.png" alt="profile_pỉcture">
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <span class="left_nav_wrapper">
+                <h1>VOCABULARY</h1>
+                <span class="separator"></span>
+            </span>
+
+            <span class="right_nav_wrapper">
+                <h3 id="set">Last Set Learned:  </h3>
+
+                <h3 id="date">Date: </h3>
+            </span>
+        </div>
+
+        <div class="vocabulary_card">
+            <h1 id="title">Unit 1: Future in the home</h1>
+
+            <div class="vocab_button">
+                <button>Thẻ ghi nhớ</button>
+                <button>Học</button>
+                <button>Kiểm tra</button>
+                <button>Ghép thẻ</button>
+            </div>
+
+            <div class="vocab_card">
+                <div class="flip_inner">
+                    <div class="front_card">
+                        <h2 id="vocab">Melingo</h2>
+                    </div>
+
+                    <div class="back_card">
+                        <h2 id="meaning">Web App học tiếng anh miễn phí</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrow_container">
+                <button id="back"><img src="/assets/arrow.png"></button>
+                <h2 id="number">1/11</h2>
+                <button id="next"><img src="/assets/arrow.png"></button>
+            </div>
+        </div>
+
+        <script type="module" defer src="index.js"></script>
+    </body>
+</html>

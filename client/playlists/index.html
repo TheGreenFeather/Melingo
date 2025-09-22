@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Melingo</title>
+        <link href="styles.css" rel="stylesheet">
+        <script defer src="index.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <!-- Tab -->
+            <div class="fa_bar">
+                <input type="checkbox" id="check">
+
+                <!-- SideBar OneChamp : xứng đáng có quay 3 dao almaphite -->
+                <div class="fa_bar_container">
+                    <header>Menu</header>
+                    <ul>
+                        <li>
+                            <a href="/client/mainhome/index.html">Home</a>
+                        </li>  
+
+                        <li>
+                            <a href="/client/playlists/index.html">Playlist</a>
+                        </li>  
+                        
+                        <li>
+                            <a href="/client/game/index.html">Games</a>
+                        </li>
+
+                        <li>
+                            <a href="/client/vocabulary/index.html">Vocabulary List</a>
+                        </li>
+
+                        <li>
+                            <a href="/client/timeset/index.html">Time Set</a>
+                        </li>
+
+                        <li>
+                            <a href="/client/services/index.html">Services</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <label for ="check">
+                    <div id="btn">
+                        <img src="/assets/fabar.png" id="btn_image" alt="menu">
+                    </div>
+                </label>
+
+            </div>
+
+            <div class="title">
+                <header>Melingo</header>
+            </div>
+            <div class="account">
+                <img src="/assets/dog.png" alt="profile_pỉcture">
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <span class="left_nav_wrapper">
+                <h1>PLAYLISTS</h1>
+                <span class="separator"></span>
+            </span>
+
+            <span class="right_nav_wrapper">
+                <form method="get" id="form_wrapper">
+                    <input type="search" name="mixname" placeholder="Search mix" class="search_box_wrapper">
+
+                    <button type="submit" id="search_btn_wrapper">Search</button>
+                </form>
+            </span>
+        </div>
+
+        <!-- Playlist -->
+        <h2 class="headbruh">Hello there! Here are some recommended playlists:</h2>
+
+        <div class="playlist_container">
+            <div class="container2">
+                <div class="playlist_card">
+                    <img class="img1" src="/assets/thumbnails/thumbnail1.png">
+                    <h1>Today's top hits</h1>
+                    <h2>Cocomelon is on the top</h2>
+                    <img class="img2" src="../../assets/play.png">
+                </div>
+
+                <div class="playlist_card">
+                    <img class="img1" src="/assets/thumbnails/thumbnail2.png">
+                    <h1>Non lyrical mix</h1>
+                    <h2>Are you tired of lyrics</h2>
+                    <img class="img2" src="../../assets/play.png">
+                </div>
+
+                <div class="playlist_card">
+                    <img class="img1" src="/assets/thumbnails/thumbnail3.png">
+                    <h1>Instrument mix</h1>
+                    <h2>Picked just for you</h2>
+                    <img class="img2" src="../../assets/play.png">
+                </div>
+
+                <div class="playlist_card">
+                    <img class="img1" src="/assets/thumbnails/thumbnail4.png">
+                    <h1>Jazz mix</h1>
+                    <h2>Relax and Jazz</h2>
+                    <img class="img2" src="../../assets/play.png">
+                </div>
+
+                <div class="playlist_card">
+                    <img class="img1" src="/assets/thumbnails/thumbnail5.png">
+                    <h1>Cocomelon mix</h1>
+                    <h2>Everything cocomelon</h2>
+                    <img class="img2" src="../../assets/play.png">
+                </div>
+
+                <div class="playlist_card">
+                    <img class="img1" src="/assets/thumbnails/thumbnail6.png">
+                    <h1>US-UK mix</h1>
+                    <h2>Experiences the best US-UK</h2>
+                    <img class="img2" src="../../assets/play.png">
+                </div>
+                
+            </div>
+
+            <div class="credit">
+                <h1>Playlists made</h1>
+                <h1>by specialists!</h1>
+                <img src="/assets/laydog.png">
+            </div>
+        </div>
+</body>
+</html>
