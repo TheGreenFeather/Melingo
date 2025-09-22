@@ -1,2 +1,2 @@
 # Melingo
-Learning app for kids
+Emotion Recognition System Supporting Children's Language Development Through Music
